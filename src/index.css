@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        @apply text-4xl font-semibold
+    }
+    h2{
+        @apply text-3xl font-semibold
+    }
+    h3{
+        @apply text-2xl font-semibold
+    }
+    h4{
+        @apply text-xl font-semibold
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    span,
+    address,
+    strong,
+    small{
+        @apply  text-white
+    }
+
+    a{
+        @apply text-white font-raleway hover:font-semibold
+    }
+}
+
+@layer components{
+    .container{
+        @apply max-w-[1440px] mx-auto
+    }
+    .button{
+        @apply bg-gradient-to-r from-cyan-gradient to-blue-gradient rounded-3xl text-white text-base font-semibold hover:saturate-50  hover:brightness-150
+    }
+}
+
+
